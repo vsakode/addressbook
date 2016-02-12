@@ -1,10 +1,7 @@
 include_recipe 'addressbook::default'
-include_recipe 'java'
 include_recipe 'tomcat'
-include_recipe 'users::sysadmins'
 include_recipe 'addressbook::nginx'
 include_recipe 'addressbook::deploy'
-include_recipe 'java_ext::jce'
 
 logrotate_app "nginxlog" do
   frequency "daily"
