@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cumulogic-app>
+  <single-vm>false</single-vm>
+<application>
+  <application-context>granny</application-context>
+  <jndi-name>MySqlGBDS</jndi-name>
+  <db-name>grannydb</db-name>
+  <db-type>MySql</db-type>
+ <application-file-name>granny.war</application-file-name>
+ <bind-global-services>true</bind-global-services>
+</application>
+
+ <services>
+    <framework>
+      <type>Java EE</type>
+      <engine>Tomcat-7.0.12</engine>
+      <no-of-nodes>1</no-of-nodes>
+      <max-nodes>2</max-nodes>
+    </framework>
+    <database>
+      <engine>MySQL-5.6.23</engine>
+      <no-of-nodes>1</no-of-nodes>
+      <storage>10</storage>
+      <config>
+        <master-username>root</master-username>
+        <master-password>Vgms1085</master-password>
+        <port>3306</port>
+        <character-set>UTF-8</character-set>
+      </config>
+    <external-host></external-host>
+    </database>
+    <elastic-load-balancer>
+      <engine>Nginx-1.2</engine>
+    </elastic-load-balancer>
+  </services>
+</cumulogic-app>
