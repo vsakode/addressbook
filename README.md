@@ -39,4 +39,4 @@ Include `addressbook` in your node's `run_list`:
 
 ## License and Authors
 
-Author:: YOUR_NAME (<YOUR_EMAIL>)
+Author:: YOUR_NAME (<vikass85@gmail.com>)
